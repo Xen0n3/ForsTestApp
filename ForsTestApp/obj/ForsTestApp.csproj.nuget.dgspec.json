@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\sergk\\source\\repos\\ForsTestApp\\ForsTestApp\\ForsTestApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sergk\\source\\repos\\ForsTestApp\\ForsTestApp\\ForsTestApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sergk\\source\\repos\\ForsTestApp\\ForsTestApp\\ForsTestApp.csproj",
+        "projectName": "ForsTestApp",
+        "projectPath": "C:\\Users\\sergk\\source\\repos\\ForsTestApp\\ForsTestApp\\ForsTestApp.csproj",
+        "packagesPath": "C:\\Users\\sergk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sergk\\source\\repos\\ForsTestApp\\ForsTestApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sergk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
