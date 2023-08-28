@@ -22,7 +22,7 @@ namespace ForsTestApp.DataSources
             dataTable.Columns.Add("Осадки", typeof(string));
             dataTable.Columns.Add("Гололед", typeof(bool));
             dataTable.Columns.Add("Радиационный фон", typeof(double));
-
+            
             dataTable.Rows.Add(101, new DateTime(2022, 10, 15, 9, 52, 40), 2, 761, 95, "Ливень", true, 0.1);
             dataTable.Rows.Add(102, new DateTime(2022, 10, 15, 10, 22, 5), 3, 761, 95, "Дождь", true, 0.1);
             dataTable.Rows.Add(103, new DateTime(2022, 10, 15, 10, 58, 7), 4, 765, 90, "Дождь", true, 0.1);
