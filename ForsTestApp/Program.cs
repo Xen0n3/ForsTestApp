@@ -42,18 +42,24 @@ while (!isCorrectDataTableType)
 
 if (tableTypeChoose == 1)
 {
-    HistoryTableSetting historyTablesetting = new HistoryTableSetting();
     bool isCorrectStepChoose = false;
-    int dataSourceStepChoose;
+    TimeSpan dataSourceStepChoose =new TimeSpan(0,0,0);
     while (!isCorrectStepChoose)
     {
         isCorrectStepChoose = ConsoleHelper.ChooseOutputStep(out dataSourceStepChoose);
-        
     }
+    HistoryTableSetting historyTableSetting = new HistoryTableSetting(dataSourceStepChoose,startDateTimeChoose,endDateTimeChoose);
+    HistoryTable historyTable = new HistoryTable(historyTableSetting);
+    TestDataSource dataSource = new TestDataSource();
+    DataTable data = dataSource.GetData(startDateTimeChoose, endDateTimeChoose);
+    historyTable.Fill(data);
+    historyTable.TableName = "Временная таблица";
+    ConsoleHelper.PrintTable(historyTable);
     //historyTablesetting.DataStep = dataSourceStepChoose;
 }
 else
 {
+    
     //Console.WriteLine("Выберите поле для начала события:");
     //Console.WriteLine("1) Температура");
     //Console.WriteLine("2) Давление");
@@ -66,10 +72,6 @@ else
     //string? ans6 = Console.ReadLine();
 }
 
-TestDataSource dataSource = new TestDataSource();
-DataTable data = dataSource.GetData(startDateTimeChoose, endDateTimeChoose);
-HistoryTable historyTable = new HistoryTable();
-historyTable.Fill(data,startDateTimeChoose,endDateTimeChoose);
 //data.Rows.Find()
 
 

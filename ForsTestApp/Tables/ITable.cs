@@ -10,6 +10,6 @@ namespace ForsTestApp.Tables
     public interface ITable
     {
         ITableSetting TableSetting { get; set; }
-        void Fill(DataTable data,DateTime startTime, DateTime endTime);
+        void Fill(DataTable data);
     }
 }

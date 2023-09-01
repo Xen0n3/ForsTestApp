@@ -16,12 +16,12 @@ namespace ForsTestApp.DataSources
 
             dataTable.Columns.Add("Id", typeof(uint));
             dataTable.Columns.Add("Время измерения", typeof(DateTime));
-            dataTable.Columns.Add("Температура", typeof(int));
-            dataTable.Columns.Add("Давление", typeof(int));
+            dataTable.Columns.Add("Темп.", typeof(int));
+            dataTable.Columns.Add("Давл.", typeof(int));
             dataTable.Columns.Add("Влажность", typeof(int));
             dataTable.Columns.Add("Осадки", typeof(string));
             dataTable.Columns.Add("Гололед", typeof(bool));
-            dataTable.Columns.Add("Радиационный фон", typeof(double));
+            dataTable.Columns.Add("Рад. фон", typeof(double));
             
             dataTable.Rows.Add(101, new DateTime(2022, 10, 15, 9, 52, 40), 2, 761, 95, "Ливень", true, 0.1);
             dataTable.Rows.Add(102, new DateTime(2022, 10, 15, 10, 22, 5), 3, 761, 95, "Дождь", true, 0.1);

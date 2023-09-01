@@ -8,7 +8,7 @@ namespace ForsTestApp
 {
     public class Row
     {
-        List<object> row;
+        
 
     }
 }
